@@ -3,7 +3,7 @@
     function testNoteListClassInstantiated() {
         var noteList = new NoteList();
 
-        assert.isTrue(noteList.notes.length === 0);
+        assert.isTrue(noteList.noteslist.length === 0);
     };
     testNoteListClassInstantiated();
 

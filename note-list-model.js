@@ -1,13 +1,13 @@
 class NoteList {
     constructor() {
-        this.notes = []
+        this.noteslist = []
     }
 
     pushToNotesArray(note) {
-        this.notes.push(note);
+        this.noteslist.push(new Note(note));
     }
 
     returnNoteList() {
-        return this.notes
+        return this.noteslist
     }
 }
