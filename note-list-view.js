@@ -4,10 +4,11 @@ class NoteListView {
     }
 
     returnHTMLString() {
-
-      let a = this.noteList.returnNoteList().map(text => "<ul><li><div>" + text.returnText() + "</li></div></ul>" )
+      let opening = '<ul>'
+      let closing = '</ul>'
+      let a = this.noteList.returnNoteList().map(text => "<li><div>" + text.returnText() + "</div></li>").join()
     
-      return a[0]
+      return opening + a + closing
       // return '<ul><li><div>' + test + '</ul></li></div>'
 
     }
