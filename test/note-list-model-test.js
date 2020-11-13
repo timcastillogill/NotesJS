@@ -12,9 +12,19 @@
         var note = new Note("Note 1");
         noteList.pushToNotesArray(note);
 
-        assert.isTrue(noteList.notes.length === 1);
+        assert.isTrue(noteList.noteslist.length === 1);
     };
-    testNoteListClassInstantiated();
+    returnsNotesFromArray();
+
+    function itGivesEachNoteAnID() {
+      var noteList = new NoteList()
+      noteList.pushToNotesArray('test')
+      noteList.pushToNotesArray('example')
+      
+      assert.isTrue(noteList.createNoteID()['test'] === 1)
+      assert.isTrue(noteList.createNoteID()['example'] === 2)
+
+    } itGivesEachNoteAnID()
 
 
 })(this);

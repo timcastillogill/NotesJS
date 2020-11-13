@@ -1,6 +1,7 @@
 class NoteList {
     constructor() {
         this.noteslist = []
+        this.ids = {}
     }
 
     pushToNotesArray(note) {
@@ -10,4 +11,23 @@ class NoteList {
     returnNoteList() {
         return this.noteslist
     }
+
+    createNoteID() {
+
+
+      this.noteslist.forEach(createObject)
+
+      function createObject(note, index) {
+       this.ids[note] = index
+      }
+
+    }
+
+    createObject(note, index) {
+
+      this.ids[note] = index;
+
+    }
+
+
 }
