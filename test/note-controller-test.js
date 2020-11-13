@@ -16,12 +16,15 @@ function itMakesANewNoteController() {
     assert.isTrue(myNoteController instanceof NoteController);
     }; itMakesANewNoteController();
 
-    function getHTMLfunctionOutputsFavouriteFood() {
-      let myNoteController = new DoubleNoteController();
-      my
+    // function getHTMLfunctionOutputsFavouriteFood() {
+    //   let noteList = new NoteList()
+    //   noteList.noteslist = ['test']
+       
+    //   noteList.returnHTMLString = function() {
+    //     return '<ul><li><div>test</div></li></ul>'
+    //   }
 
-
-    }
+    // }
 
 
   })(this);
